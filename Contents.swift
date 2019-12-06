@@ -40,13 +40,13 @@ extension Date {
         let dayOfWeek = calendar.component(.weekday, from: self)
         
         switch dayOfWeek {
-            case 0: return "Sun"
-            case 1: return "Mon"
-            case 2: return "Tue"
-            case 3: return "Wed"
-            case 4: return "Thu"
-            case 5: return "Fri"
-            case 6: return "Sat"
+            case 1: return "Sun"
+            case 2: return "Mon"
+            case 3: return "Tue"
+            case 4: return "Wed"
+            case 5: return "Thu"
+            case 6: return "Fri"
+            case 7: return "Sat"
             default: return ""
         }
     }
@@ -54,15 +54,15 @@ extension Date {
     var longDay: String {
         let calendar = Calendar.current
         let dayOfWeek = calendar.component(.weekday, from: self)
-
+        
         switch dayOfWeek {
-            case 0: return "Sunday"
-            case 1: return "Monday"
-            case 2: return "Tuesday"
-            case 3: return "Wednesday"
-            case 4: return "Thursday"
-            case 5: return "Friday"
-            case 6: return "Saturday"
+            case 1: return "Sunday"
+            case 2: return "Monday"
+            case 3: return "Tuesday"
+            case 4: return "Wednesday"
+            case 5: return "Thursday"
+            case 6: return "Friday"
+            case 7: return "Saturday"
             default: return ""
         }
     }
